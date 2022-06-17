@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/lunes">
+
+    <fragment
+            android:id="@+id/lunes"
+            android:name="com.example.examen_recuperacion_android.horarios.ui.lunes.HomeFragment"
+            android:label="@string/title_home"
+            tools:layout="@layout/fragment_home"/>
+
+    <fragment
+            android:id="@+id/martes"
+            android:name="com.example.examen_recuperacion_android.horarios.ui.martes.DashboardFragment"
+            android:label="@string/title_dashboard"
+            tools:layout="@layout/fragment_dashboard"/>
+
+    <fragment
+            android:id="@+id/miercoles"
+            android:name="com.example.examen_recuperacion_android.horarios.ui.miercoles.NotificationsFragment"
+            android:label="@string/title_notifications"
+            tools:layout="@layout/fragment_notifications"/>
+    <fragment
+            android:id="@+id/jueves"
+            android:name="com.example.examen_recuperacion_android.horarios.ui.jueves.JuevesFragment"
+            android:label="jueves"
+            tools:layout="@layout/fragment_jueves"/>
+    <fragment
+            android:id="@+id/viernes"
+            android:name="com.example.examen_recuperacion_android.horarios.ui.viernes.ViernesFragment"
+            android:label="viernes"
+            tools:layout="@layout/fragment_viernes"/>
+</navigation>

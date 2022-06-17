@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:padding="10dp">
+
+    <TextView
+            android:text="Add dato"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tv_dialog" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/et_horario_dialog"
+            app:layout_constraintTop_toBottomOf="@+id/et_dia_dialog" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:hint="Hora" android:layout_marginTop="20dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/et_dia_dialog" app:layout_constraintTop_toBottomOf="@+id/tv_dialog"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp" android:hint="Dia"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/et_modulo_dialog"
+            android:hint="Modulo"
+            app:layout_constraintTop_toBottomOf="@+id/et_horario_dialog" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/et_aula_dialog"
+            app:layout_constraintTop_toBottomOf="@+id/et_modulo_dialog" android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:hint="Aula"/>
+    <Button
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/b_add_dialog"
+            app:layout_constraintTop_toBottomOf="@+id/et_aula_dialog"
+            android:layout_marginTop="50dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="IMPORTANTE: Los datos se actualizan al salir y entrar en la activity de nuevo."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tv_info_dialog"
+            app:layout_constraintTop_toBottomOf="@+id/b_add_dialog" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp" android:textSize="20sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
